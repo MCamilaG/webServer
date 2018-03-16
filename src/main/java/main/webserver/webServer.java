@@ -51,7 +51,7 @@ public class webServer implements Runnable{
                     format = "text/html";                   
                 }
             }else{
-                byt = Files.readAllBytes(new File("./"+source).toPath());
+                byt = Files.readAllBytes(new File("./index.html"+source).toPath());
                 output = "" + byt.length;
                 format = "text/html";                               
             }
