@@ -44,7 +44,7 @@ public class webServer implements Runnable{
                 }else if(source.contains(".jpg")){
                     byt = Files.readAllBytes(new File("./imagen.html"+source).toPath());
                     output = "" + byt.length;
-                    format = "text/html";                                   
+                    format = "image/html";                                   
                 }else{
                     byt = Files.readAllBytes(new File("./index.html").toPath());
                     output = "" + byt.length;
